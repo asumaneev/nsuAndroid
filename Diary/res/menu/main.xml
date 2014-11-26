@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   <group 
+       android:id="@+id/mainMenuGroup">
+       
+       <item
+           android:id="@+id/menuNewNote"
+           android:orderInCategory="10"
+           android:title="@string/new_note_title" />
+       
+   </group>
+   
+   <item
+       android:id="@+id/menuExit"
+       android:orderInCategory="100"
+       android:title="@string/exit_title"/>
+</menu>

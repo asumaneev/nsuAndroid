@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+    
+    <RelativeLayout 
+        android:id="@+id/noteEditorTitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <TextView 
+            android:id="@+id/noteEditorTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/noteTitle"
+            android:gravity="top|center"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+        
+        <EditText 
+            android:id="@+id/noteEditorTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="@integer/title_max_length"
+            android:inputType="text"
+            android:layout_below="@+id/noteEditorTitleTextView"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/noteEditorBodyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noteEditorTitleLayout"
+        >
+        
+        <TextView 
+            android:id="@+id/noteEditorBodyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/noteBody"
+            android:gravity="top|center"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+        
+        <EditText 
+            android:id="@+id/noteEditorBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="@integer/note_max_length"
+            android:inputType="text"
+            android:layout_below="@+id/noteEditorBodyTextView"/>
+        
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/noteModificationSubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:text="@string/submit"
+        android:layout_below="@+id/noteEditorBodyLayout" />
+    
+</RelativeLayout>
