@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="integer" name="settings_circle_radius_min">10</item>
+    <item type="integer" name="settings_circle_radius_max">9990</item>
+    
+</resources>
